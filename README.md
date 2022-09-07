@@ -24,6 +24,8 @@
 
 Google 계정으로 로그인을 한 후 해당 사용자의 Youtube 데이터를 동기화시켜 구독중인 채널을 보여주거나 댓글을 남기는 등 실제 Youtube 웹사이트처럼 이용할 수 있도록 제작한 프로젝트입니다. <br/> [Youtube Data API 공식문서](https://developers.google.com/youtube/v3/docs/)를 참고하여 개발했습니다.
 
+- 제작 기간 : 2022.03.06 - 2022.03.29
+
 <br/>
 
 ## 기술 스택
@@ -34,7 +36,7 @@ Google 계정으로 로그인을 한 후 해당 사용자의 Youtube 데이터�
 
 ## 프로젝트 구현 사항
 
-### 상태 관리
+### Redux 상태관리 툴
 
 - Redux와 Redux-thunk로 비동기적인 상태를 효율적으로 관리도록 개발했습니다.
   [📝 더 알아보기](https://devjoylee.github.io/tags?q=redux)
