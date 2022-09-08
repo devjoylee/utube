@@ -1,4 +1,10 @@
-import { Container, VideoIframe, VideoMetaData, CommentList, RelatedVideoList } from 'components';
+import {
+  Container,
+  VideoIframe,
+  VideoMetaData,
+  CommentList,
+  RelatedVideoList,
+} from 'components';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -11,6 +17,10 @@ export const WatchPage = () => {
   useEffect(() => {
     dispatch(getVideoById(id));
   }, [dispatch, id]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const { video, loading } = useSelector((state) => state.watchVideo);
 
